@@ -1,4 +1,29 @@
 {
 	"name": "@gregorydorrifourt/particles",
-	"version": "0.0.1"
+	"author": "Gregory Dorrifourt",
+	"version": "0.0.1",
+	"license": "MIT",
+	"description": "Interactive background with particles",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/GregoryDorrifourt/particles"
+	},
+	"main": "src/particles.js",
+	"keywords": [
+		"particles",
+		"particules",
+		"background",
+		"canvas",
+		"animation",
+		"npm",
+		"package",
+		"gregorydorrifourt"
+	],
+	"scripts": {
+		"build": "babel src -d lib"
+	},
+	"devDependencies": {
+		"@babel/cli": "^7.6.0",
+		"@babel/core": "^7.6.0"
+	}
 }
