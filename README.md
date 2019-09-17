@@ -1,4 +1,4 @@
-# particles
-Interactive particles background
+![npm (scoped)](https://img.shields.io/npm/v/@gregorydorrifourt/particles) ![npm bundle size](https://img.shields.io/bundlephobia/min/@gregorydorrifourt/particles?label=size)
 
-![npm (scoped)](https://img.shields.io/npm/v/@gregorydorrifourt/particles)
+# @gregorydorrifourt/particles
+Interactive particles background generator.
