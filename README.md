@@ -5,8 +5,14 @@ Interactive particles background generator.
 
 ## Install
 
+Using *npm*
 ```
 $ npm install @gregorydorrifourt/particles
+```
+
+Using *yarn*
+```
+$ yarn add @gregorydorrifourt/particles
 ```
 
 ## Usage

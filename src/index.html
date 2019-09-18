@@ -8,13 +8,42 @@
     <script type="text/javascript" src="../lib/particles.min.js"></script>
     <script>
         window.onload = function(){
-            var config = {contain: false, fullscreen: true, bubble: true, addParticleOnClick: true, threshold: 150}
+            var config = {contain: false, fullscreen: false, bubble: true, addParticleOnClick: true, threshold:150}
             var particles = new Particles(config);
             particles.render();
         }
     </script>
+    <style>
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        html {
+            height: 100%;
+        }
+
+        body {
+
+            margin: 0;
+            min-height: 100%;
+        }
+        main {
+
+            align-items: center;
+            display: flex;
+            height: 100%;
+            justify-content: center;
+            left: 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-    <canvas id="particles-background" width="400" height="500"></canvas>  
+    <main>
+        <canvas id="particles-background" width="400" height="500"></canvas>  
+    </main>
 </body>
 </html>
