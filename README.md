@@ -17,6 +17,10 @@ $ yarn add @gregorydorrifourt/particles
 
 ## Usage
 
+```html
+<canvas id="particles-background"></canvas>
+```
+
 ```js
 window.onload = function(){
     var particles = new Particles();
