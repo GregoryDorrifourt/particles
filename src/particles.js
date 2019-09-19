@@ -178,6 +178,10 @@ class Particles {
     resume() {
         this.stopped = false;
     }
+
+    reset(config) {
+        this.config = {...this.defaultConfig, ...config};
+    }
 }
 
 class Particle {
