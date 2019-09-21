@@ -60,13 +60,14 @@ Now in javascript, on window load, create a new instance of ```Particles``` clas
             color: '#404040',
             bubble: true
         };
-        var particles = new Particles();
+        var particles = new Particles(config);
         particles.render();
     }
 </script>
 ```
 
 You can use this online generator to test and create your own config :
+
 <a href="https://www.gregorydorrifourt.fr/particles" title="Go to générator">
     <img src="https://www.gregorydorrifourt.fr/particles/assets/md-screenshot.png" alt="Particles generator">
 </a>
