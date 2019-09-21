@@ -29,7 +29,7 @@ Create a ```<canvas>``` tag in your html. Default id is ```particles-background`
 
 Now in javascript, on window load, create a new instance of ```Particles``` class then call ```render()```.
 ```js
-<script type="text-javascript">
+<script type="text/javascript">
     window.onload = function(){
         var particles = new Particles();
         particles.render();
@@ -42,7 +42,7 @@ Now in javascript, on window load, create a new instance of ```Particles``` clas
 `Particles.render` takes a config object as parameter. 
 
 ```js
-<script type="text-javascript">
+<script type="text/javascript">
     window.onload = function(){
         var config = {
             element: 'particles-background',
