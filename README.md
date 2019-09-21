@@ -68,7 +68,7 @@ Now in javascript, on window load, create a new instance of ```Particles``` clas
 
 You can use this online generator to test and create your own config :
 
-<a href="https://www.gregorydorrifourt.fr/particles" title="Go to générator">
+<a href="https://www.gregorydorrifourt.fr/particles" target="_blank" title="Go to online generator">
     <img src="https://www.gregorydorrifourt.fr/particles/assets/md-screenshot.png" alt="Particles generator">
 </a>
 
