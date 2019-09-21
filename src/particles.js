@@ -6,7 +6,7 @@ class Particles {
             contain: false,
             threshold: 150,
             particlesForScreenWidths: {
-                small: 90,
+                small: 70,
                 medium: 100,
                 large: 150
             },
@@ -17,11 +17,12 @@ class Particles {
         };
         this.config = { ...this.defaultConfig, ...config };
         this.stopped = false;
+        this.rAF = null;
     }
 
     render(){
 
-        const requestAnimationFrame = window.requestAnimationFrame;
+        const requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
 
         const canvas = document.getElementById(this.config.element);
 
@@ -87,17 +88,11 @@ class Particles {
                     }
                 })
             }
-            
-        
         }
-        
-        
         
         const draw = () => {
 
-            if(!document.hidden && !this.stopped) { // CHeck if tab is active
-
-                
+            if(!document.hidden && !this.stopped) { // Check if tab is active
                 
                 ctx.clearRect(0,0,ctx.canvas.width,ctx.canvas.height);
     
@@ -155,7 +150,7 @@ class Particles {
                 }
             }
             
-            requestAnimationFrame(draw);
+            this.rAF = requestAnimationFrame(draw);
             
         }
 
@@ -181,6 +176,9 @@ class Particles {
 
     reset(config) {
         this.config = {...this.defaultConfig, ...config};
+        const cancelAnimationFrame = window.cancelAnimationFrame || window.mozCancelAnimationFrame;
+        cancelAnimationFrame(this.rAF);
+        this.render();
     }
 }
 
