@@ -15,19 +15,19 @@ yarn add @gregorydorrifourt/particles
 
 ## Hosting / CDN
 
-File hosted at JSDelivr. Simply add this script before the closing ```body``` tag. 
+File hosted at JSDelivr. Simply add this script before the closing `body` tag. 
 ```html
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@gregorydorrifourt/particles@latest/lib/particles.min.js"></script>
 ```
 
 ## Usage
 
-Create a ```<canvas>``` tag in your html. Default id is ```particles-background```.
+Create a `<canvas>` tag in your html. Default id is `particles-background`.
 ```html
 <canvas id="particles-background"></canvas>
 ```
 
-Now in javascript, on window load, create a new instance of ```Particles``` class then call ```render()```.
+Now in javascript, on window load, create a new instance of `Particles` class then call `render()`.
 ```js
 <script type="text/javascript">
     window.onload = function(){
