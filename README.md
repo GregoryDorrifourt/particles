@@ -88,7 +88,7 @@ threshold | `Number` | Set the maximum distance to draw a line between 2 dots. `
 
 Function | Parameters | Description
 ----|-------|-------------
-Particles.render() | `Config object` | Creates background
-Particles.reset() | `Config object` | Resets background with new config object
-Particles.resume() |  | Resume canvas animation
-Particles.stop() |  | Stop canvas animation
+`Particles.render()` | `Config object` | Creates background
+`Particles.reset()` | `Config object` | Resets background with new config object
+`Particles.resume()` |  | Resume canvas animation
+`Particles.stop()` |  | Stop canvas animation
